@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid grey;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background: url("scarface.png");
+    background-size: 100% 500px;
+}
+
+.header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0E0E0E;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    color: white;
+}
+
+.header div h1 {
+    font-size: 2.5em;
+}
+
+.header div p {
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.header div p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header div p:hover {
+    font-size: 1em;
+}
+
+.movie-section {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.movie-section .explore {
+    text-align: center;
+    margin: 8rem 0;
+}
+
+.movie-icon {
+    font-size: 5em;
+    color: #9CA3AF;
+}
+
+.movie-icon-label {
+    margin: 0;
+    color: #9CA3AF;
+}
+
+.add-movies-label {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.icon-link {
+    color: black;
+}
+
+.plusicon {
+    margin: 0 0.4rem;
+}
+
+.movie-box {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    border-bottom: 2px solid grey;
+    padding: 1rem 0;
+    margin:  auto;
+}
+
+.poster {
+    width: 120px;
+    height: 150px;
+}
+
+.runtime {
+    margin-left: 1rem;
+}
+
+.movie-icon {
+    font-size: 5em;
+    color: #9CA3AF;
+}
+
+.movie-icon-label {
+    margin: 0;
+    color: #9CA3AF;
+}
+
+.rgw-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.rgw-flex p {
+    font-size: 0.8em;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+}
+
+.plot {
+    font-size: 0.8em;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 1rem;
+}
+
+.data-container h3 {
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+span {
+    font-weight: normal;
+    margin: 0 1rem;
+    font-size: 0.8em;
+}
+
+
+.remove {
+    display: inline;
+    cursor: pointer;
+}
+
+.remove-watchlist {
+    margin-left: 3rem;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    color: gold;
+}
+
+.plus-icon {
+    cursor: pointer;
+}
+
+.fa-moon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: #ced4da;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* UTILITY */
+
+.black {
+    color: white;
+    background-color: black;
+}
+
+.white {
+    color: black;
+    background-color: white;
+}
+
+
+@media (max-width: 500px){
+    .header div h1 {
+        font-size: 2em;
+    }
+    
+    .movie-box {
+        align-items: center;
+    }
+    
+    .rgw-flex {
+        align-items: center;
+    }
+    
+    .poster {
+        height: auto;
+    }
+}
+
